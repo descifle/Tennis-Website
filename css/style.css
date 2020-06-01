@@ -1,8 +1,8 @@
 /* GOOGLE FONTS */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto:700);
-@import url(http://fonts.googleapis.com/css?family=Roboto:700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700italic);
 
 /* Global properties ======================================================== */
 a[href^="tel:"] { color: inherit; text-decoration: none;}
