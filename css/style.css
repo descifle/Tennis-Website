@@ -183,6 +183,19 @@ header {
   background: #fff;
 }
 
+.dropdown-1 {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 10px 0;
+  background: #2a2a2a;
+  text-align: left;
+  width: 100%;
+  white-space: normal;
+}
+
 .bot1 {
   position: relative;
 }
@@ -744,12 +757,11 @@ header {
   text-align: center;
 }
 
-.sub-menu ul {
+.sub-menu .dropdown {
   position: absolute;
   display: none;
   left: 0px;
   top: 79px;
-  list-style: none;
   zoom: 1;
   z-index: 109;
   margin: 0;
@@ -1415,6 +1427,19 @@ h6 {
   line-height: 70px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .sub-menu:hover .dropdown {
+    display: block;
+  }
+
+  .sub-menu-1:hover .dropdown-1 {
+    display: block;
+  }
+}
 @media (min-width: 1200px) {
   .top2_wrapper {
     margin-bottom: -71px;
