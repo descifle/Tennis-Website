@@ -43,16 +43,13 @@
 							</header>
 
 							<div class="block2 clearfix">
-								<div class="phone1">
-									<div class="txt1">Call Today</div>
-									<div class="txt2">410-744-9844</div>
-								</div>
+								
 								<div class="social_wrapper">
 									<ul class="social clearfix">
 										<li><a href="#"><img src="images/social_ic1.png"></a></li>
 										<li><a href="#"><img src="images/social_ic2.png"></a></li>
 										<li><a href="#"><img src="images/social_ic3.png"></a></li>
-										<li><a href="#"><img src="images/social_ic4.png"></a></li>
+										<li><a href="https://www.facebook.com/groups/1496629373839949/"><img src="images/social_ic4.png"></a></li>
 									</ul>
 								</div>
 							</div>
@@ -80,12 +77,12 @@
 										<div id="nav1" class="navbar-collapse collapse">
 											<ul class="nav navbar-nav mx-auto">
 												<li class="active first"><a href="index.html">Home</a></li>
-												<li class="sub-menu sub-menu-1"><a href="#content">About us<em></em></a>
-													<ul class="dropdown-menu">
+												<li class="sub-menu"><a href="#content">About us<em></em></a>
+													<ul class="dropdown">
 														<li><a href="index-1.html">Lorem ipsum dolor</a></li>
-														<li class="sub-menu sub-menu-1"><a
+														<li class="sub-menu-1"><a
 																href="index-1.html">Adipiscing elit<em></em></a>
-															<ul>
+															<ul class="dropdown-1">
 																<li><a href="index-1.html">lorem ipsum dolor</a></li>
 																<li><a href="index-1.html">sit amet</a></li>
 																<li><a href="index-1.html">adipiscing elit</a></li>
@@ -93,16 +90,6 @@
 																<li><a href="404.html">404 page not found</a></li>
 															</ul>
 														</li>
-														<li class="sub-menu sub-menu-1"><a href="index-1.html">Nunc
-																suscipit<em></em></a>
-															<ul>
-																<li><a href="index-1.html">lorem ipsum dolor</a></li>
-																<li><a href="index-1.html">sit amet</a></li>
-																<li><a href="index-1.html">adipiscing elit</a></li>
-																<li><a href="index-1.html">nunc suscipit</a></li>
-															</ul>
-														</li>
-														<li><a href="index-1.html">Suspendisse enim arcu</a></li>
 													</ul>
 												</li>
 												<li class="nav-item"><a class="nav-link"
@@ -725,8 +712,31 @@
 	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 	<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-	<script src="js/first-page.js"></script>
+	<script src="js/controls.js"></script>
 	<script src="js/simple.js"></script>
+	<script>
+		$(document).ready( () => {
+			$('#camera_wrap').camera({
+            //thumbnails: true
+            //alignment			: 'centerRight',
+            autoAdvance: true,
+            mobileAutoAdvance: true,
+            fx: 'simpleFade',
+            height: '48%',
+            hover: false,
+            loader: 'none',
+            navigation: false,
+            navigationHover: true,
+            mobileNavHover: true,
+            playPause: false,
+            pauseOnClick: false,
+            pagination: true,
+            time: 5000,
+            transPeriod: 1000,
+            minHeight: '200px'
+        });
+		})
+	</script>
 </body>
 
 </html>

@@ -1,27 +1,7 @@
 $(document).ready(() => {
     //
-    $('#camera_wrap').camera({
-        //thumbnails: true
-        //alignment			: 'centerRight',
-        autoAdvance: true,
-        mobileAutoAdvance: true,
-        fx: 'simpleFade',
-        height: '48%',
-        hover: false,
-        loader: 'none',
-        navigation: false,
-        navigationHover: true,
-        mobileNavHover: true,
-        playPause: false,
-        pauseOnClick: false,
-        pagination: true,
-        time: 5000,
-        transPeriod: 1000,
-        minHeight: '200px'
-    });
-
     //	carouFredSel banner
-    $($('.carousel')).live(() => {
+    $($('.carousel')).on(() => {
         $('#banner .carousel.main ul').carouFredSel({
             auto: {
                 timeoutDuration: 8000
@@ -63,24 +43,27 @@ $(document).ready(() => {
     }
     updateSizes_vat();
 
+    $('.thumb-isotope a, .thumbnail a').touchTouch();
 
 });
 // end document.ready
 // isotope
 
-let $container = $('#isotope-items'),
+$(window).on("load",() => {
+
+    let $container = $('#isotope-items'),
     $optionSet = $('#isotope-options'),
     $optionSets = $('#isotope-filters'),
     $optionLinks = $optionSets.find('a');
     
-$container.isotope({
+    $container.isotope({
     filter: '*',
     percentPosition: true,
     layoutMode: 'fitRows'
 
-  })
+    })
 
-$optionLinks.click(function () {
+    $optionLinks.click(function () {
     let $this = $(this);
     // don't proceed if already selected
     if ($this.hasClass('selected')) {
@@ -92,8 +75,8 @@ $optionLinks.click(function () {
     let selector = $(this).attr('data-filter');
     $container.isotope({
         filter: selector
-    });
+     });
     return false;
-});
+    });
+})
 
-$('.thumb-isotope .thumbnail a').touchTouch();

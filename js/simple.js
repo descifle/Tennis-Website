@@ -5,8 +5,11 @@ $(document).ready(() => {
     })
 
     $('.sub-menu').hover(() => {
-        $('.dropdown-menu').show()
-    }/*, () => $('.dropdown-menu').hide()*/)
+        const dropDownMenu = $(this).children(".dropdown")
+        if(dropDownMenu.is(":visible")) {
+            dropDownMenu.parent().toggleClass("open")
+        }
+    }/*, () => $('.dropdown').hide()*/)
 
 });
 // end document.ready
