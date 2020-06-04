@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>St Timothy Tennis Club, Catonsville, MD</title>
+	<title>St Timothy Tennis Club</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="St timothy tennis club in Catonsville, MD">
+	<meta name="description" content="St timothy tennis club in Catonsville, MD. A club for all ages and people!">
 	<meta name="keywords" content="tennis, St Timothy, club, Catonsville, Maryland, 21228, kids camp, interclub play">
-	<meta name="author" content="Your name">
+	<meta name="author" content="Giovanni Headley">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">
@@ -734,7 +733,36 @@
             time: 5000,
             transPeriod: 1000,
             minHeight: '200px'
-        });
+		});
+		
+		//	carouFredSel banner
+				$('#banner .carousel.main ul').carouFredSel({
+				auto: {
+					timeoutDuration: 8000
+				},
+				responsive: true,
+				prev: '.banner_prev',
+				next: '.banner_next',
+				width: '100%',
+				scroll: {
+					items: 1,
+					duration: 1000,
+					easing: "easeOutExpo"
+				},
+				items: {
+					width: '350',
+					height: 'variable',	//	optionally resize item-height
+					visible: {
+						min: 1,
+						max: 4
+					}
+				},
+				mousewheel: false,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+					}
+			});
 		})
 	</script>
 </body>
