@@ -441,6 +441,10 @@ header {
   margin: 0;
 }
 
+#by-laws_accordion h2 {
+  padding: 0;
+}
+
 .team_prev {
   display: block;
   width: 20px;
@@ -1429,6 +1433,11 @@ h6 {
 
 ul {
   list-style-type: none;
+}
+
+.spacer {
+  height: 4rem;
+  background-color: black;
 }
 
 @media (min-width: 768px) {

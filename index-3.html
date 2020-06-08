@@ -126,7 +126,7 @@
 						<p>
 							To apply for membership, please complete this form.
 						</p>
-						<form class="membership-form">
+						<form id="membership-form" action="contact.php" method="POST">
 							<div class="form-group">
 								<label id="name-label" for="fname">First Name</label>
 								<input type="text" name="fname" id="fname" class="form-control" placeholder="Enter first name" required>
@@ -169,11 +169,21 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<p class="form-p text-spacing">Any comments?</p>
+								<p class="form-p text-spacing">Tennis Interests?</p>
 								<textarea class="textarea" name="comment" placeholder="Enter your comment here..."></textarea>
 							</div>
+							<div class="form-group capthca">
+								<label class="control-label" for="inputCapthca">Capthca:</label>
+								<div class="controls">
+									<input class="" type="text" id="inputCapthca" name="capthca"
+										value="Capthca:"
+										onBlur="if(this.value=='') this.value='Capthca:'"
+										onFocus="if(this.value =='Capthca:' ) this.value=''">
+									<img src="captcha/captcha.php">
+								</div>
+							</div>
 							<div class="form-group">
-								<button class="submit-button" form="form" value="submit">Submit</button>
+								<button class="submit-button" form="membership-form" value="submit">Submit</button>
 							</div>
 						</form>
 					</div>

@@ -418,6 +418,13 @@ header {
 		}
 	}
 }
+// About Start
+
+#by-laws_accordion {
+	h2 {
+		padding: 0;
+	}
+}
 .team_prev {
 	display: block;
 	width: 20px;
@@ -1388,11 +1395,16 @@ h6 {
 		line-height: 70px;
 	}
 }
-
+// Start MISC
 ul  {
 	list-style-type: none;
 }
 
+.spacer {
+	height: 4rem; 
+	background-color: black;
+}
+// End MISC
 @media (min-width: 768px) {
 	.sub-menu:hover .dropdown {
 		display: block;
