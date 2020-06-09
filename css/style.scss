@@ -211,6 +211,7 @@ header {
 	padding: 45px 0;
 	background: url(../images/px1.png);
 	color: #d8d8d8;
+	width: 100%;
 	font-weight: 700;
 	font-style: italic;
 }
@@ -496,6 +497,42 @@ header {
 		}
 	}
 }
+
+// End About
+// Start Services
+
+#membership-form {
+	background-color: white;
+	padding: .5rem 1rem; 
+	margin-left: -40px;
+	margin-right: -40px;
+
+	.textarea {
+		height: 6rem;
+		font-size: 1.3rem;
+		padding: 0.3rem;
+	  }
+}
+
+.submit-button {
+	margin-top: 1rem;
+  background-color: #0bb10b;
+  border: none;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem;
+  width: 8rem;
+  transition: background-color .1s ease-in-out;
+
+  &:hover {
+	background-color: #086e08;
+  }
+}
+
+// End Services
 .breadcrumbs1_wrapper {
 	position: relative;
 	margin-top: 10px;
@@ -1402,10 +1439,23 @@ ul  {
 
 .spacer {
 	height: 4rem; 
-	background-color: black;
+	background-color: #ac4a20;
 }
 // End MISC
 @media (min-width: 768px) {
+
+	#membership-form {
+		background-color: white;
+		padding: 2rem 8rem; 
+		margin: 0;
+	
+		.textarea {
+			height: 6rem;
+			font-size: 1.3rem;
+			padding: 0.3rem;
+		  }
+	}
+
 	.sub-menu:hover .dropdown {
 		display: block;
 	  }
@@ -1416,6 +1466,8 @@ ul  {
 }
 
 @media (min-width: 1200px) {
+
+
 	.top2_wrapper {
 		margin-bottom: -71px;
 	}

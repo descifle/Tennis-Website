@@ -8,6 +8,7 @@
 	<meta name="description" content="St timothy tennis club in Catonsville, MD. A club for all ages and people!">
 	<meta name="keywords" content="tennis, St Timothy, club, Catonsville, Maryland, 21228, kids camp, interclub play">
 	<meta name="author" content="Giovanni Headley">
+	<meta name="author" content="descifle">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
@@ -26,7 +27,7 @@
 </head>
 
 <body class="front">
-	<main id="main">
+	<main id="main" class="container-fluid">
 
 		<div class="bg1"><img src="images/bg1.jpg" alt="" class="img"></div>
 
@@ -61,12 +62,12 @@
 
 		<div class="top2_wrapper">
 			<div class="container">
-				<div class="row">
+				<div class="row rowset">
 					<div class="span12">
 						<div class="top2 clearfix">
 
 							<div class="menu_wrapper">
-								<div class=" navbar_">
+								<div class="navbar_">
 									<div class="navbar navbar-expand-lg">
 										<button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse"
 											data-target="#nav1" aria-controls="navbarNav" aria-expanded="false"
@@ -78,7 +79,7 @@
 												<li class="active first"><a href="index.html">Home</a></li>
 												<li class="sub-menu"><a href="#content">About<em></em></a>
 													<ul class="dropdown">
-														<li class="sub-menu-1"><a href="index-1.html">ABOUT US<em></em></a>
+														<li class="sub-menu-1"><a href="#about">ABOUT US<em></em></a>
 															<ul class="dropdown-1">
 																<li><a href="#about">About</a></li>
 																<li><a href="#club-rules">club Rules</a></li>
@@ -142,8 +143,8 @@
 		<div id="banner_wrapper">
 			<div class="container">
 				<div id="banner">
-					<a class="banner_prev" href="#"></a>
-					<a class="banner_next" href="#"></a>
+					<a class="banner_prev" href=""></a>
+					<a class="banner_next" href=""></a>
 					<div class="carousel-box">
 						<div class="inner">
 							<div class="carousel main">
@@ -189,7 +190,7 @@
 									<li>
 										<div class="banner">
 											<div class="banner_inner">
-												<div class="txt1">SUMMER<br>TENNIS KIDS CAMPS</div>
+												<div class="txt1">SUMMER TENNIS <br/> KIDS CAMPS</div>
 												<figure><img src="images/banner3.jpg" alt="" class="img"></figure>
 												<div class="caption">
 													<div class="txt2">
@@ -198,7 +199,7 @@
 														Nulladuice feugiat malesuada odiopolo. Morbnc odiof, gravida at,
 														cursus na loruodem.
 													</div>
-													<a href="#" class="button1">more</a>
+													<a href="" class="button1">more</a>
 												</div>
 												<div class="shadow2"><img src="images/shadow2.png" alt="" class="img">
 												</div>
@@ -217,14 +218,14 @@
 														Nulladuice feugiat malesuada odiopolo. Morbnc odiof, gravida at,
 														cursus na loruodem.
 													</div>
-													<a href="#" class="button1">more</a>
+													<a href="" class="button1">more</a>
 												</div>
 												<div class="shadow2"><img src="images/shadow2.png" alt="" class="img">
 												</div>
 											</div>
 										</div>
 									</li>
-									<li>
+									<!-- <li>
 										<div class="banner">
 											<div class="banner_inner">
 												<div class="txt1">Tennis<br>School</div>
@@ -261,7 +262,7 @@
 												</div>
 											</div>
 										</div>
-									</li>
+									</li> -->
 									<li>
 										<div class="banner">
 											<div class="banner_inner">
@@ -307,7 +308,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="spacer"></div>
+		<div class="spacer row"></div>
 		<div id="content">
 			<div class="container">
 				<div class="row">
@@ -320,6 +321,7 @@
 						<div class="thumb1">
 							<div class="thumbnail clearfix">
 								<figure class=""><img src="images/StTennis2r.jpg" alt=""></figure>
+								<h2 class="scndry-text pt-0 pb-2">"Friendly Club in Catonsville, MD"</h2>
 								<div class="caption">
 									<p>
 										Our season generally runs from late April to October of each year. Playing hours
@@ -807,8 +809,8 @@
 
 									<ul class="ul1">
 										<li><a href="#">Reserve Time</a></li>
-										<li><a href="#">Tennis School</a></li>
-										<li><a href="#">Proffesional Training</a></li>
+										<!-- <li><a href="#">Tennis School</a></li>
+										<li><a href="#">Proffesional Training</a></li> -->
 										<li><a href="#">Summer Tennis Camps</a></li>
 									</ul>
 
@@ -826,7 +828,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="spacer"></div>
+		<div class="spacer row"></div>
 		<section id="community" class="container">
 			<div class="row">
 				<div class="span9">
@@ -971,10 +973,10 @@
 				</div>
 			</div>
 		</section>
-		<div class="spacer"></div>
+		<div class="spacer row"></div>
 		<section id="services" class="container">
 			<div class="row">
-				<div class="span9">
+				<div class="col-md-12">
 					<h1>Membership</h1>
 					<p>
 						Membership at St Timothy Tennis Club is very affordable. The 2019 season Adult membership is $335 per year. Family membership is $375. We also offer a Junior membership for $25. New members initiation fee of $25 is waived.
@@ -1014,10 +1016,10 @@
 							<label id="zip-label" for="zip">Zip Code</label>
 							<input type="number" name="zip" id="zip" class="form-control" placeholder="" required>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label id="age-label" for="age">Age<span class="mini-text">(optional)</span></label>
 							<input type="number" name="age" id="age" min="13" max="99" class="form-control" placeholder="Age" required>
-						</div>
+						</div> -->
 						<div class="form-group">
 							<p class="form-p text-spacing">Which option describes you?</p>
 							<select id="dropdown" name="membership-type" class="form-control" required>
@@ -1029,7 +1031,7 @@
 						</div>
 						<div class="form-group">
 							<p class="form-p text-spacing">Tennis Interests?</p>
-							<textarea class="textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+							<textarea class="textarea form-control" name="comment" placeholder="Enter your comment here..."></textarea>
 						</div>
 						<div class="form-group capthca">
 							<label class="control-label" for="inputCapthca">Capthca:</label>
@@ -1046,6 +1048,8 @@
 						</div>
 					</form>
 				</div>
+			</div>
+			<div class="row">
 				<div class="span9">
 
 					<div class="box1">
@@ -1191,11 +1195,11 @@
 				</div>
 			</div>
 		</section>
-		<div class="spacer"></div>
+		<div class="spacer row"></div>
 		<div id="gallery-content">
 			<div class="container">
 				<div class="row">
-					<div class="span12">
+					<div class="col-sm-12">
 
 						<h1>Gallery</h1>
 
@@ -1351,7 +1355,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="spacer"></div>
+		<div class="spacer row"></div>
 		<section id="contact" class="container">
 			<div class="row">
 				<div class="span9">
@@ -1361,9 +1365,7 @@
 						<h1>Our Location</h1>
 
 						<figure class="google_map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1298.6352964486368!2d-76.73081280045656!3d39.272539251230576!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1537378171110"
-								width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.6180761957244!2d-76.7332871346385!3d39.27423142951421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c817504690ed17%3A0xcab44f7a2d7cf136!2sNew%20Hope%20Community%20Church!5e0!3m2!1sen!2sus!4v1591714502938!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 						</figure>
 
 						<h3>St Timothy Tennis Club</h3>
@@ -1490,7 +1492,7 @@
 			</div>
 		</section>
 
-		<div class="bot1_wrapper">
+		<div class="bot1_wrapper row">
 			<div class="container">
 				<div class="row">
 					<div class="span12">
@@ -1523,7 +1525,7 @@
 			</div>
 		</div>
 
-		<div class="bot2_wrapper">
+		<div class="bot2_wrapper row">
 			<div class="hl1"></div>
 			<div class="container">
 				<div class="row">
@@ -1556,15 +1558,16 @@
 									<div class="bot2_title">Services</div>
 
 									<ul class="ul0">
-										<li><a href="#">Nunc suscipit</a></li>
-										<li><a href="#">Suspendisse enim arcu</a></li>
-										<li><a href="#">Convallis non cursus sed</a></li>
-										<li><a href="#">Dignissim et est</a></li>
-										<li><a href="#">Aenean semper aliquet libero</a></li>
+										<li><a href="#">Tennis Tournament</a></li>
+										<li><a href="#">Tennis Instruction</a></li>
+										<li><a href="#">Interclub Playing</a></li>
+										<li><a href="#">Summer Tennis Kids Camp</a></li>
+										<li><a href="#">Tennis Team Training</a></li>
+										<li><a href="#">Summer Tennis Camp</a></li>
 									</ul>
 
 								</div>
-								<div class="span2">
+								<!-- <div class="span2">
 
 									<div class="bot2_title">Classes</div>
 
@@ -1577,7 +1580,7 @@
 										<li><a href="#">Primis in faucib</a></li>
 									</ul>
 
-								</div>
+								</div> -->
 							</div>
 
 						</div>
@@ -1588,7 +1591,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="span12">
-							<footer>Copyright © 2018. All rights reserved.</footer>
+							<footer>Copyright © 2019 - Present. All rights reserved.</footer>
 						</div>
 					</div>
 				</div>

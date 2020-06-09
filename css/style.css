@@ -231,6 +231,7 @@ header {
   padding: 45px 0;
   background: url(../images/px1.png);
   color: #d8d8d8;
+  width: 100%;
   font-weight: 700;
   font-style: italic;
 }
@@ -513,6 +514,35 @@ header {
 }
 .team .team_inner .txt2 {
   padding-bottom: 15px;
+}
+
+#membership-form {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+#membership-form .textarea {
+  height: 6rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  background-color: #0bb10b;
+  border: none;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem;
+  width: 8rem;
+  transition: background-color 0.1s ease-in-out;
+}
+.submit-button:hover {
+  background-color: #086e08;
 }
 
 .breadcrumbs1_wrapper {
@@ -1437,10 +1467,21 @@ ul {
 
 .spacer {
   height: 4rem;
-  background-color: black;
+  background-color: #ac4a20;
 }
 
 @media (min-width: 768px) {
+  #membership-form {
+    background-color: white;
+    padding: 2rem 8rem;
+    margin: 0;
+  }
+  #membership-form .textarea {
+    height: 6rem;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+  }
+
   .sub-menu:hover .dropdown {
     display: block;
   }

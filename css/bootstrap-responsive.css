@@ -8,9 +8,6 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
-.clearfix {
-  *zoom: 1;
-}
 
 .clearfix:before,
 .clearfix:after {
@@ -65,6 +62,10 @@
   display: inherit !important;
 }
 
+.scndry-text {
+  color: #888;
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
   .hidden-desktop {
     display: inherit !important;
@@ -109,9 +110,13 @@
 }
 
 @media (min-width: 1200px) {
+
+  .rowset {
+    margin-right: 0;
+  }
+
   .row {
     margin-left: -30px;
-    *zoom: 1;
   }
   .row:before,
   .row:after {
@@ -207,7 +212,6 @@
   }
   .row-fluid {
     width: 100%;
-    *zoom: 1;
   }
   .row-fluid:before,
   .row-fluid:after {
@@ -461,8 +465,12 @@
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
-    *zoom: 1;
   }
+
+  .rowset {
+    margin-right: 0;
+  }
+
   .row:before,
   .row:after {
     display: table;
@@ -557,7 +565,6 @@
   }
   .row-fluid {
     width: 100%;
-    *zoom: 1;
   }
   .row-fluid:before,
   .row-fluid:after {
@@ -828,10 +835,10 @@
   .row-fluid {
     width: 100%;
   }
-  .row,
+  /* .row,
   .thumbnails {
     margin-left: 0;
-  }
+  } */
   .thumbnails > li {
     float: none;
     margin-left: 0;
