@@ -52,7 +52,7 @@
 
 #isotope-options{}
 #isotope-filters{ margin: 20px 0px 30px 0px; padding: 0px 0px 0px 0px; list-style: none; background: #fff;}
-#isotope-filters li{display: inline-block; float: left; margin-right: 0px; margin-bottom: 0px; border-right: 1px solid #ececec;}
+#isotope-filters li{display: inline-block; margin-right: 0px; margin-bottom: 0px; border-right: 1px solid #ececec;}
 #isotope-filters li a{display:block; font-family: 'Roboto'; font-weight: 400; text-decoration: none; font-size: 14px; line-height: 20px; color: #e04a0b; padding: 19px 25px; background: #fff;
 transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
 }
@@ -61,3 +61,24 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 #isotope-items.thumbnails{margin-bottom: 0;}
 #isotope-items.thumbnails > li{margin-bottom: 30px;}
+
+.isotope-element {
+  margin:0 1rem;
+  width: 250px;
+}
+
+#isotope-items {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  #isotope-items {
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+  .isotope-element {
+    margin:0 1rem;
+    width: 300px;
+  }
+} 
