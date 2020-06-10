@@ -516,6 +516,12 @@ header {
   padding-bottom: 15px;
 }
 
+.form-submitted {
+  background-color: #1adf1a;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
 #membership-form {
   background-color: white;
   padding: 0.5rem 1rem;
@@ -543,6 +549,13 @@ header {
 }
 .submit-button:hover {
   background-color: #086e08;
+}
+
+.disabled {
+  background-color: grey;
+}
+.disabled:hover {
+  background-color: grey;
 }
 
 .breadcrumbs1_wrapper {

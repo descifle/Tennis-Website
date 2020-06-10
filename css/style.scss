@@ -501,6 +501,12 @@ header {
 // End About
 // Start Services
 
+.form-submitted {
+	background-color: rgb(26, 223, 26);
+	font-size: 2rem;
+	padding: 1rem;
+}
+
 #membership-form {
 	background-color: white;
 	padding: .5rem 1rem; 
@@ -530,6 +536,13 @@ header {
   &:hover {
 	background-color: #086e08;
   }
+}
+
+.disabled {
+	background-color: grey;
+	&:hover {
+		background-color: grey;
+	}
 }
 
 // End Services

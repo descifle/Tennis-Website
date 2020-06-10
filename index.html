@@ -370,7 +370,7 @@
 
 
 					</div>
-					<div class="span3">
+					<!-- <div class="span3">
 
 						<h2>News & Events</h2>
 
@@ -412,17 +412,17 @@
 							</div>
 						</a>
 
-						<!--<div class="line2"></div>
+						<div class="line2"></div>
 
-<a href="#" class="button1">news archive</a> -->
-
-
+<a href="#" class="button1">news archive</a>
 
 
 
 
 
-					</div>
+
+
+					</div> -->
 					<div class="span9">
 
 						<div class="box1">
@@ -987,67 +987,72 @@
 					<p>
 						To apply for membership, please complete this form.
 					</p>
-					<form id="membership-form" action="form_process.php" method="POST">
-						<div class="form-group">
-							<label id="name-label" for="fname">First Name</label>
-							<input type="text" name="fname" id="fname" class="form-control" placeholder="Enter first name" required>
-						</div>
-						<div class="form-group">
-							<label id="name-label" for="lname">Last Name</label>
-							<input type="text" name="lname" id="lname" class="form-control" placeholder="Enter last name" required>
-						</div>
-						<div class="form-group">
-							<label id="email-label" for="email">Email</label>
-							<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
-						</div>
-						<div class="form-group">
-							<label id="phone-label" for="phone">Phone Number</label>
-							<input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter phone number" required>
-						</div>
-						<div class="form-group">
-							<label id="address-label" for="address">Address</label>
-							<input type="text" name="address" id="address" class="form-control" placeholder="Enter Address" required>
-						</div>
-						<div class="form-group">
-							<label id="city-label" for="city">City</label>
-							<input type="text" name="city" id="city" class="form-control" placeholder="Enter City" required>
-						</div>
-						<div class="form-group">
-							<label id="zip-label" for="zip">Zip Code</label>
-							<input type="number" name="zip" id="zip" class="form-control" placeholder="" required>
-						</div>
-						<!-- <div class="form-group">
-							<label id="age-label" for="age">Age<span class="mini-text">(optional)</span></label>
-							<input type="number" name="age" id="age" min="13" max="99" class="form-control" placeholder="Age" required>
-						</div> -->
-						<div class="form-group">
-							<p class="form-p text-spacing">Which option describes you?</p>
-							<select id="dropdown" name="membership-type" class="form-control" required>
-								<option disabled select value>Select Membership Type</option>
-								<option value="adult">Adult</option>
-								<option value="FPM">Family Principle Member</option>
-								<option value="junior">Junior</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<p class="form-p text-spacing">Tennis Interests?</p>
-							<textarea class="textarea form-control" name="comment" placeholder="Enter your comment here..."></textarea>
-						</div>
-						<div class="form-group capthca">
-							<!-- <label class="control-label" for="inputCapthca">Capthca:</label>
-							<div class="controls">
-								<input class="" type="text" id="inputCapthca" name="capthca"
-									value="Capthca:"
-									onBlur="if(this.value=='') this.value='Capthca:'"
-									onFocus="if(this.value =='Capthca:' ) this.value=''">
-								<img src="captcha/captcha.php">
+					<div class="form-group form-message"></div>
+					<div class="form-holder">
+						<form id="membership-form" action="form_process.php" method="POST">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label id="name-label" for="fname">First Name</label>
+									<input type="text" name="fname" id="fname" class="form-control" placeholder="Enter first name">
+								</div>
+								<div class="form-group col-md-6">
+									<label id="name-label" for="lname">Last Name</label>
+									<input type="text" name="lname" id="lname" class="form-control" placeholder="Enter last name" required>
+								</div>
 							</div>
-						</div> -->
-						<div class="g-recaptcha" data-sitekey="6Lf0rKIZAAAAAGdV3zMSXomVQl92QWfxpNrLOtll"></div>
-						<div class="form-group">
-							<button class="submit-button" form="membership-form" value="submit">Submit</button>
-						</div>
-					</form>
+							<div class="form-group">
+								<label id="email-label" for="email">Email</label>
+								<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+							</div>
+							<div class="form-group">
+								<label id="phone-label" for="phone">Phone Number</label>
+								<input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter phone number" required>
+							</div>
+							<div class="form-group">
+								<label id="address-label" for="address">Address</label>
+								<input type="text" name="address" id="address" class="form-control" placeholder="Enter Address" required>
+							</div>
+							<div class="form-group">
+								<label id="city-label" for="city">City</label>
+								<input type="text" name="city" id="city" class="form-control" placeholder="Enter City" required>
+							</div>
+							<div class="form-group">
+								<label id="zip-label" for="zip">Zip Code</label>
+								<input type="number" name="zip" id="zip" class="form-control" placeholder="" required>
+							</div>
+							<!-- <div class="form-group">
+								<label id="age-label" for="age">Age<span class="mini-text">(optional)</span></label>
+								<input type="number" name="age" id="age" min="13" max="99" class="form-control" placeholder="Age" required>
+							</div> -->
+							<div class="form-group">
+								<p class="form-p text-spacing">Which option describes you?</p>
+								<select id="dropdown" name="membership-type" class="form-control" required>
+									<option disabled select value>Select Membership Type</option>
+									<option value="adult">Adult</option>
+									<option value="FPM">Family Principle Member</option>
+									<option value="junior">Junior</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<p class="form-p text-spacing">Tennis Interests?</p>
+								<textarea class="textarea form-control" name="comment" placeholder="Enter your comment here..."></textarea>
+							</div>
+							<div class="form-group capthca">
+								<!-- <label class="control-label" for="inputCapthca">Capthca:</label>
+								<div class="controls">
+									<input class="" type="text" id="inputCapthca" name="capthca"
+										value="Capthca:"
+										onBlur="if(this.value=='') this.value='Capthca:'"
+										onFocus="if(this.value =='Capthca:' ) this.value=''">
+									<img src="captcha/captcha.php">
+								</div>
+							</div> -->
+							<div class="g-recaptcha" data-sitekey="6Lf0rKIZAAAAAGdV3zMSXomVQl92QWfxpNrLOtll" data-callback="recaptcha_callback" data-expired-callback="disableButton"></div>
+							<div class="form-group">
+								<button class="submit-button disabled" form="membership-form" value="submit" disabled="true">Submit</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -1618,60 +1623,7 @@
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script src="js/cform.js"></script>
 	<script src="js/jquery.ui.totop.js"></script>
-	<script src="js/controls.js"></script>
 	<script src="js/simple.js"></script>
-	<script>
-		$(document).ready( () => {
-			$('#camera_wrap').camera({
-            //thumbnails: true
-            //alignment			: 'centerRight',
-            autoAdvance: true,
-            mobileAutoAdvance: true,
-            fx: 'simpleFade',
-            height: '48%',
-            hover: false,
-            loader: 'none',
-            navigation: false,
-            navigationHover: true,
-            mobileNavHover: true,
-            playPause: false,
-            pauseOnClick: false,
-            pagination: true,
-            time: 5000,
-            transPeriod: 1000,
-            minHeight: '200px'
-		});
-		
-		//	carouFredSel banner
-				$('#banner .carousel.main ul').carouFredSel({
-				auto: {
-					timeoutDuration: 8000
-				},
-				responsive: true,
-				prev: '.banner_prev',
-				next: '.banner_next',
-				width: '100%',
-				scroll: {
-					items: 1,
-					duration: 1000,
-					easing: "easeOutExpo"
-				},
-				items: {
-					width: '350',
-					height: 'variable',	//	optionally resize item-height
-					visible: {
-						min: 1,
-						max: 4
-					}
-				},
-				mousewheel: false,
-				swipe: {
-					onMouse: true,
-					onTouch: true
-					}
-			});
-		})
-	</script>
 </body>
 
 </html>
