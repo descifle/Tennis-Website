@@ -12,19 +12,19 @@ $(document).ready(function(){
 		return false; 
 	}); 
 
-	// $("#membership-form").submit(function(){
-	// 	const str = $(this).serialize(); 
-	// 	$.ajax( { type: "POST", url: "form_process.php", data: str, success: function(msg){ 
-	// 			if(msg == "great success") // Message Sent? Show the 'Thank You' message and hide the form
-	// 				{ result = '<div class="form-submitted">Your information has been saved. Thank you!<br> <a href="" onclick="mReset();return false;">Sign up another member!</a></div>'; $(".form-holder").hide(); } 							
-	// 			else
-	// 				{ result = msg; } 
-	// 			$(".form-message").html(result);
-	// 			location.assign('#services')
-	// 		} 
-	// 	}); 
-	// 	return false; 
-	// }); 
+	$("#membership-form").submit(function(){
+		const str = $(this).serialize(); 
+		$.ajax( { type: "POST", url: "form_process.php", data: str, success: function(msg){ 
+				if(msg == "great success") // Message Sent? Show the 'Thank You' message and hide the form
+					{ result = '<div class="form-submitted">Your information has been saved. Thank you!<br> <a href="" onclick="mReset();return false;">Sign up another member!</a></div>'; $(".form-holder").hide(); } 							
+				else
+					{ result = `<div class="form-denied">${msg}</div>`; } 
+				$(".form-message").html(result);
+				location.assign('#services')
+			} 
+		}); 
+		return false; 
+	}); 
 });
 				
 function freset(){ 	
@@ -38,8 +38,8 @@ function mReset(){
 	document.getElementById('membership-form').reset();
 	$(".form-holder").show();
 };
-// form client side validation
 
+// recaptcha settings || client side validation
 function recaptcha_callback() {
 	$(".submit-button").attr("disabled", false);
 	$(".submit-button").removeClass('disabled');

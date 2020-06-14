@@ -7,49 +7,49 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["fname"])) {
-            $firstNameErr = "First name is required <br />";
+            $firstNameErr = "<p>First name is required </p>";
         } else {
             $firstName = verifyInput($_POST['fname']);
         }
 
         if (empty($_POST["lname"])) {
-            $lastNameErr = "Last name is required <br />";
+            $lastNameErr = "<p>Last name is required </p>";
         } else {
             $lastName = verifyInput($_POST['lname']);
         }
 
         if (empty($_POST["email"])) {
-            $emailErr = "Enter a proper email address <br />";
+            $emailErr = "<p>Enter a proper email address </p>";
         } else {
             $email = verifyInput($_POST['email']);
         }
 
         if (empty($_POST["phone"])) {
-            $phoneErr = "Enter a valid phone number <br />";
+            $phoneErr = "<p>Enter a valid phone number </p>";
         } else {
             $phone = verifyInput($_POST['phone']);
         }
 
         if (empty($_POST["address"])) {
-            $addressErr = "Enter valid address <br />";
+            $addressErr = "<p>Enter valid address </p>";
         } else {
             $address = verifyInput($_POST['address']);
         }
 
         if (empty($_POST["city"])) {
-            $cityErr = "Enter valid city <br />";
+            $cityErr = "<p>Enter valid city </p>";
         } else {
             $city = verifyInput($_POST['city']);
         }
 
         if (empty($_POST["zip"])) {
-            $zipErr = "Enter valid zipcode <br />";
+            $zipErr = "<p>Enter valid zipcode </p>";
         } else {
             $zip = verifyInput($_POST['zip']);
         }
 
         if (empty($_POST["city"])) {
-            $membershipErr = "Select Membership type <br />";
+            $membershipErr = "<p>Select Membership type </p>";
         } else {
             $membership = verifyInput($_POST['membership-type']);
         }
@@ -93,7 +93,7 @@
 
         echo "great success";
     } else {
-        echo "There was an error adding your information";
+        echo "<h1>There was an error adding your information </h1>";
     }
 
     echo $firstNameErr;

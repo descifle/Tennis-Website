@@ -118,23 +118,6 @@ header {
   float: left;
 }
 
-.phone1 {
-  float: left;
-  padding-left: 35px;
-  background: url(../images/phone1.png) 0 7px no-repeat;
-}
-.phone1 .txt1 {
-  font-size: 14px;
-  color: #ececec;
-  font-style: italic;
-  padding-left: 7px;
-}
-.phone1 .txt2 {
-  font-size: 24px;
-  color: #ececec;
-  font-style: italic;
-}
-
 .social_wrapper {
   float: left;
   padding-top: 10px;
@@ -272,6 +255,24 @@ header {
 .ul0 > li a:hover {
   color: #f7dc2a;
   text-decoration: underline;
+}
+
+#calendar-preview {
+  height: 30rem;
+  overflow: hidden;
+  border: solid 2px white;
+  border-radius: 5px;
+}
+#calendar-preview h2 {
+  color: black;
+  text-decoration: underline #ac4a20;
+  margin-left: 1rem;
+}
+
+#calendar-preview_iframe {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #banner_wrapper {
@@ -442,6 +443,10 @@ header {
   margin: 0;
 }
 
+.h1-mirror {
+  font-size: 1.6rem;
+}
+
 #by-laws_accordion h2 {
   padding: 0;
 }
@@ -518,15 +523,25 @@ header {
 
 .form-submitted {
   background-color: #1adf1a;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
+}
+
+.form-denied {
+  background-color: #dc3545;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+.form-denied h1 {
+  color: inherit;
 }
 
 #membership-form {
   background-color: white;
   padding: 0.5rem 1rem;
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 #membership-form .textarea {
   height: 6rem;
@@ -1561,6 +1576,11 @@ ul {
   }
   #ajax-contact-form textarea {
     width: 395px;
+  }
+}
+@media (min-width: 1281px) {
+  .menu_wrapper {
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 2000px) {

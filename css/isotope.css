@@ -50,8 +50,20 @@
 
 /**** Custom ****/
 
-#isotope-options{}
-#isotope-filters{ margin: 20px 0px 30px 0px; padding: 0px 0px 0px 0px; list-style: none; background: #fff;}
+#isotope-options{
+  
+}
+
+#isotope-filters{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0px 30px 0px;
+  padding: 0px 0px 0px 0px; 
+  list-style: none; 
+  background: #fff;
+}
+
 #isotope-filters li{display: inline-block; margin-right: 0px; margin-bottom: 0px; border-right: 1px solid #ececec;}
 #isotope-filters li a{display:block; font-family: 'Roboto'; font-weight: 400; text-decoration: none; font-size: 14px; line-height: 20px; color: #e04a0b; padding: 19px 25px; background: #fff;
 transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;

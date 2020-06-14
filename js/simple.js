@@ -104,4 +104,12 @@ $(window).on("load",() => {
      });
     return false;
     });
+
+    // $(window).on("resize", function( event ) {
+	// 	$container.isotope('reLayout');
+	// });
+
+    // touchTouch
+	$('.thumbnail a').touchTouch();
+	
 })
