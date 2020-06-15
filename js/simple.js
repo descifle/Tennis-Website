@@ -110,6 +110,8 @@ $(window).on("load",() => {
 	// });
 
     // touchTouch
-	$('.thumbnail a').touchTouch();
+    // $('.thumbnail a').touchTouch();
+    
+    baguetteBox.run('.thumbnails')
 	
 })
