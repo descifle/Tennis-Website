@@ -83,7 +83,7 @@ $(window).on("load",() => {
     $optionLinks = $optionSets.find('a');
     
     $container.isotope({
-    filter: '*',
+    filter: '.isotope-filter3',
     percentPosition: true,
     layoutMode: 'fitRows'
 
