@@ -2,6 +2,7 @@
 
     $firstNameErr = $lastNameErr = $emailErr = $phoneErr = $addressErr = $cityErr = $zipErr = $membershipErr = $commentErr = "";
     $firstName = $lastName = $email = $phone = $address = $city = $zip = $membership = $comment = "";
+    $inactive = 0;
 
     include 'contact_config.php';
 
@@ -91,11 +92,11 @@
             if($conn->connect_error) {
                 die('Connection Failed  :'.$conn->connect_error);
             } else {
-                $stmt = $conn->prepare("insert into members (First, Last, Email, MobilePhone, comment, Address, City, State, Zip, Notes,)
-                values(?,?,?,?)");
-                $stmt->bind_param("ssis",$fullName, $email, $phone, $comment);
+                $stmt = $conn->prepare("insert into members (First, Last, Email, HomePhone, Address, City, Zip, Notes, Active, Cat)
+                values(?,?,?,?,?,?,?,?,?,?)");
+                $stmt->bind_param("sssissisis",$firstName, $lastName, $email, $phone, $address, $city, $zip, $comment, $inactive, $membership);
                 $stmt->execute();
-                echo "user info succesfully stored...";
+                // echo "user info succesfully stored...";
                 $stmt->close();
                 $conn->close();
             }
@@ -127,5 +128,4 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    // <script>location.assign("index-5.html")</script> 
 ?>
