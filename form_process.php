@@ -86,6 +86,20 @@
     $subject = "Member Information :";
 
     if(!array_filter($errors)) {
+
+        $conn = new mysqli('localhost','root','','sttimtennis');
+            if($conn->connect_error) {
+                die('Connection Failed  :'.$conn->connect_error);
+            } else {
+                $stmt = $conn->prepare("insert into members (First, Last, Email, MobilePhone, comment, Address, City, State, Zip, Notes,)
+                values(?,?,?,?)");
+                $stmt->bind_param("ssis",$fullName, $email, $phone, $comment);
+                $stmt->execute();
+                echo "user info succesfully stored...";
+                $stmt->close();
+                $conn->close();
+            }
+
         mail(WEBMASTER_EMAIL, $subject, $message,
         "From: ".$firstName." <".$email.">\r\n"
         ."Reply-To: ".$email."\r\n"
